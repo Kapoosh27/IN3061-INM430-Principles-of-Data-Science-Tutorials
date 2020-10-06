@@ -27,7 +27,9 @@ import matplotlib.pyplot as plt
 
 print(plt.hist(c))
 
-## Calculate the Euclidean distance
+## Calculate the Euclidean distance as a calculator
+
+from math import sqrt
 
 p=np.random.rand(10)
 
@@ -38,3 +40,13 @@ print(p,q)
 ed= np.sqrt((p[0]-q[0])**2+(p[1]-q[1])**2+(p[2]-q[2])**2+(p[3]-q[3])**2+(p[4]-q[4])**2)+(p[5]-q[5])**2+(p[6]-q[6])**2+(p[7]-q[7])**2+(p[8]-q[8])**2+(p[9]-q[9])**2
 
 print(ed)
+
+## calculating the Euclidean distance using arithmetic operators
+
+euclideanDist = 0
+for i in range (0, 10):
+    euclideanDist += (p[i]-q[i])**2
+    euclideanDist = sqrt(euclideanDist)
+print(euclideanDist)
+
+
